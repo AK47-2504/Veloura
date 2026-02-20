@@ -13,18 +13,18 @@ const ownerSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  product: {
-    type: Array,
-    default: [],
-  },
+  // product: {
+  //   type: Array,
+  //   default: [],
+  // },
 
-  picture: {
-    type: String,
-    default: "",
-  },
-  gstin: {
-    type: String,
-  },
+  // picture: {
+  //   type: String,
+  //   default: "",
+  // },
+  // gstin: {
+  //   type: String,
+  // },
 });
-const ownerModel = mongoose.model("owners", userSchema);
+const ownerModel  = mongoose.model("owners", ownerSchema);
 module.exports = ownerModel;

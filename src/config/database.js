@@ -6,6 +6,7 @@ async function connectDB() {
     .connect(process.env.MONGO_URI)
     .then(() => {
       debug("Database Connected Successfully");
+      console.log("Database connected");
     })
     .catch((err) => {
       debug("Database Connection Failed");
